@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import injectSheet from 'react-jss';
 import { Step } from 'react-scrollama';
 import * as d3 from 'd3'
@@ -38,9 +38,9 @@ const styles = {
 
 const Main = (props) => {
   const [data, setData] = useState(0);
-  const [steps, setSteps] = useState([10, 20, 30]);
+  // const [steps, setSteps] = useState([10, 20, 30]);
   const [progress, setProgress] = useState(0);
-  const [dataset, setDataset] = useState(null);
+  // const [dataset, setDataset] = useState(null);
   const { classes } = props;
 
   // useEffect(() => {
@@ -52,6 +52,7 @@ const Main = (props) => {
   const onStepEnter = e => {
     const { data, entry, direction} = e;
     setData(data);
+    console.log(entry, direction)
     const dietColor = d3.scaleOrdinal(d3.schemeCategory10);
     const graph = d3.select("#diet")
       .selectAll("g.arc")
@@ -91,6 +92,7 @@ const Main = (props) => {
   };
 
   const onStepProgress = ({ progress }) => {
+    console.log(progress)
     setProgress(progress);
   };
 
