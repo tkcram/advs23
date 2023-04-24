@@ -1,0 +1,50 @@
+#dietTooltip {
+	display: none;
+	position: absolute;
+	width: 100px;
+	padding: 2px;    
+	text-align: center; 
+	font-family:sans-serif;
+	font-size: 12px;
+	font-weight: 550;
+	background: powderblue; 
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.lifecycleTooltip {
+	display: none;
+	position: absolute;
+	width: 100px;
+	padding: 2px;    
+	text-align: center; 
+	font-family:sans-serif;
+	font-size: 12px;
+	font-weight: 550;
+	background: powderblue; 
+	border-radius: 8px;
+}
+
+#rangeModule {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rangeTooltip {
+	font-size: 12px;
+}
+
+#rangeImage {
+	height:10px;
+	width:210px;
+	padding-right:10px;
+	object-fit: fill;
+	border: none;
+}
+
+.wingspanFilter {
+	margin: 20px 0;
+	padding: 0 50px;
+	font-size: 12px;
+}
