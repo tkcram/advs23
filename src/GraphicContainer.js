@@ -55,7 +55,7 @@ const styles = {
 
 const GraphicContainer = ({onStepEnter, onStepExit, onStepProgress, graphicComponent, children, alignment = "right", orientation = 'horizontal', classes}) => {
   const onStepEnterComp = () => {
-    onStepEnter();
+    // onStepEnter();
     // specific shit
   }
 

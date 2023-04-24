@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import injectSheet from 'react-jss';
 import { Step } from 'react-scrollama';
-import Diet, { getData } from './WingspanDiet';
 import * as d3 from 'd3'
 import GraphicContainer from './GraphicContainer'
 
@@ -31,10 +30,7 @@ const styles = {
       marginBottom: 0,
     },
   },
-  timeline: {
-    maxWidth: '100%',
-    maxHeight: '100%'
-  },
+
   dummy: {
     height: '100vh'
   }
@@ -47,11 +43,11 @@ const Main = (props) => {
   const [dataset, setDataset] = useState(null);
   const { classes } = props;
 
-  useEffect(() => {
-    getData().then(resp => {
-      setDataset(resp);
-    })
-  }, []);
+  // useEffect(() => {
+  //   getData().then(resp => {
+  //     setDataset(resp);
+  //   })
+  // }, []);
 
   const onStepEnter = e => {
     const { data, entry, direction} = e;
@@ -105,7 +101,7 @@ const Main = (props) => {
       <p>An introduction might be in order</p>
       <section>
         <h3 className={classes.subtitle}>In the beginning (Part 1), there was nothing. Wait that’s a few billion years too early... </h3>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img className={classes.timeline} src={data}></img>}>
+        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img alt="testAlt" className={classes.timeline} src={data}></img>}>
           <Step data="/images/tl_test_1.png">
             <div className={classes.step}>
               <p>LEGO was created by Ole Kirk Christiansen, in Billund, Denmark. Trained as a carpenter, he owned a small shop with a modest staff, working primarily building houses. However it was during the depression he began taking on smaller projects, such as ironing boards and step ladders. The small scale models for these projects were what inspired him to create a series of children’s toys.</p>
@@ -142,7 +138,7 @@ const Main = (props) => {
       <section>
         <h3 className={classes.subtitle}>Shit hit’s the fan (Part 2)</h3>
         <h4>Let's do a quick stocktake on what lego is doing (Theme's etc) and what they expanded into in the 90's</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img className={classes.timeline} src="/images/theme_test.png"></img>} alignment="bottom" orientation="vertical">
+        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img alt="testAlt" className={classes.timeline} src="/images/theme_test.png"></img>} alignment="bottom" orientation="vertical">
           <Step data="testup">
             <div className={classes.step}>
               <p>So let’s check in. By 1992 LEGO is a household name, selling to a worldwide audience, with sets targeting a wide variety of interests across multiple demographics. How then, within the decade that follows, does the company nearly go bankrupt?</p>
@@ -166,7 +162,7 @@ const Main = (props) => {
         </GraphicContainer>
 
         <h4>So how was the product changing</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img className={classes.timeline} src={data}></img>} alignment="bottom" orientation="vertical">
+        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img alt="testAlt" className={classes.timeline} src={data}></img>} alignment="bottom" orientation="vertical">
           <Step data="/images/line_test_1.png">
             <div className={classes.step}>
               <p>There was also an obvious shift when it came to designing the set’s themselves. Build complexity seemed to dwindle, utilising a smaller number of highly specialised pieces. It seemed to be build for “people who didn’t really like LEGO”.</p>
@@ -185,7 +181,7 @@ const Main = (props) => {
         </GraphicContainer>
 
         <h4>Let's talk about the money shall we...</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/e/b/ebitda_margin_graph_with_annual_revenue_slide01.jpg"></img>} alignment="bottom" orientation="vertical">
+        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<img alt="testAlt" src="https://www.slideteam.net/media/catalog/product/cache/1280x720/e/b/ebitda_margin_graph_with_annual_revenue_slide01.jpg"></img>} alignment="bottom" orientation="vertical">
         </GraphicContainer>
 
 
