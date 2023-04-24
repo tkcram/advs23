@@ -42,6 +42,8 @@ const Main = (props) => {
   const [progress, setProgress] = useState(0);
   // const [dataset, setDataset] = useState(null);
   const { classes } = props;
+  console.log(progress)
+
 
   // useEffect(() => {
   //   getData().then(resp => {
