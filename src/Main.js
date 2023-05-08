@@ -43,7 +43,7 @@ const Main = (props) => {
   const [progress, setProgress] = useState(0);
   // const [dataset, setDataset] = useState(null);
   const { classes } = props;
-  // console.log(progress)
+  console.log(progress)
 
 
   // useEffect(() => {
@@ -88,6 +88,7 @@ const Main = (props) => {
   const onStepEnter = e => {
     const { data, entry, direction} = e;
     setData(data);
+    console.log(entry, direction)
     // console.log(entry, direction)
     const dietColor = d3.scaleOrdinal(d3.schemeCategory10);
     const graph = d3.select("#diet")
