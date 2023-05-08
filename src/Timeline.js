@@ -55,7 +55,7 @@ const Timeline = (props) => {
       </ol>
       <div className={classes.description}>
         <div id="timelineDesc">here's some more random details about this fact. Isn't it amazing. It happened on this specific date</div>
-        <img id="timelineImg" src="https://m.media-amazon.com/images/I/51qnro877GL._AC_SX679_.jpg"/>
+        <img id="timelineImg" src="https://m.media-amazon.com/images/I/51qnro877GL._AC_SX679_.jpg" alt="some alt text"/>
       </div>
     </div>
 	)
