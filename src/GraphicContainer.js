@@ -54,10 +54,10 @@ const styles = {
 };
 
 const GraphicContainer = ({onStepEnter, onStepExit, onStepProgress, graphicComponent, children, alignment = "right", orientation = 'horizontal', classes}) => {
-  // const onStepEnterComp = () => {
-    // onStepEnter();
-    // specific shit
-  // }
+  const onStepEnterComp = () => {
+    onStepEnter();
+    // console.log(data)
+  }
 
 
   return (
@@ -68,8 +68,8 @@ const GraphicContainer = ({onStepEnter, onStepExit, onStepProgress, graphicCompo
             onStepExit={onStepExit}
             progress
             onStepProgress={onStepProgress}
-            offset="400px"
-            debug
+            offset={0.6}
+            // debug
             >
             {children}
           </Scrollama>

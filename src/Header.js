@@ -28,7 +28,7 @@ const Header = (props) => {
 
 	return(
 		<header className={classes.header}>
-			<div className={classes.title}>Do we need a title?</div>
+			<div className={classes.title}>INFO 696</div>
 			<button className={classes.about}>About</button>
 		</header>
 	)
