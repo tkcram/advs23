@@ -184,14 +184,30 @@ const Main = (props) => {
         <Step data="pieces_per_set_total">
           <div className={classes.step}>
             <p>Even with its success, Bionicle still experienced some of the same design flaws of the time. Much like Scala and Galidor, it relied heavily on large, bespoke pieces that were intended to reduce build complexity. However, since there was no consensus as to what these pieces should be, each theme set about creating their own. Between 1995 and 2004, LEGO introduced an average of around 500 pieces each year, requiring the creation of 500 new moulds each year. And these moulds weren’t long lived, as over the same period around 400 pieces were discontinued each year as themes came and went.</p>
-            <p>During this time, LEGO was also producing more sets than ever before. In 1992, they released 137 different sets. Ten years later that number had more than tripled, up to 550. That combined with a desire for each set to have new and innovative pieces, some 2500 unique LEGO pieces were being produced at its peak in 2001. Of course innovation can only be as good as the success it breeds, and to sustain the tripling manufacturing costs, LEGO would need to bring in triple the revenue. This simply didn’t happen and the company was almost driven to bankruptcy.</p>
-            <p>According to the company’s annual statements, which they began releasing in 1998this downturn can be seen. From 1998 to 2004, company expenses averaged approximately 8,100 million Danish Kroner (mDKK), or roughly $2 billion USD when adjusted for inflation and conversion. The average revenue was was barely keeping pace, averaging 8,200mDKK during the same period. The effects of Star Wars are also clearly visible, with a 20% increase in revenue seen in 1999 and 2002, when new movies were released. If we remove those two anomalous years, the average revenue drops significantly to 7,600mDKK.</p>
           </div>
         </Step>
         <Step data="themes_per_year_new">
           <div className={classes.step}>
+            <p>During this time, LEGO was also producing more sets than ever before. In 1992, they released 137 different sets. Ten years later that number had more than tripled, up to 550. That combined with a desire for each set to have new and innovative pieces, some 2500 unique LEGO pieces were being produced at its peak in 2001. Of course innovation can only be as good as the success it breeds, and to sustain the tripling manufacturing costs, LEGO would need to bring in triple the revenue. This simply didn’t happen and the company was almost driven to bankruptcy.</p>
+          </div>
+        </Step>
+        <Step data="themes_per_year_discontinued">
+          <div className={classes.step}>
+            <p>According to the company’s annual statements, which they began releasing in 1998this downturn can be seen. From 1998 to 2004, company expenses averaged approximately 8,100 million Danish Kroner (mDKK), or roughly $2 billion USD when adjusted for inflation and conversion. The average revenue was was barely keeping pace, averaging 8,200mDKK during the same period. The effects of Star Wars are also clearly visible, with a 20% increase in revenue seen in 1999 and 2002, when new movies were released. If we remove those two anomalous years, the average revenue drops significantly to 7,600mDKK.</p>
+          </div>
+        </Step>
+        <Step data="pieces_per_year_new">
+          <div className={classes.step}>
             <p>This can be seen reflected in the company’s bottom line. Over the same seven year period, LEGO only posted a profit for three of them. Partially bolstered by the release of another prominent tie-in franchise, Harry Potter, 2001 saw the highest profit at 366mDKK. The rest of this period is marred by significant losses, averaging 397mDKK per year. The lowest point was in 2004, when the company posted a 1,800mDKK loss. This was the death knell for then CEO Kjeld Kirk Kristiansen, who resigned from the company to be replaced by Jørgen Vig Knudstorp.</p>
+          </div>
+        </Step>
+        <Step data="pieces_per_year_total">
+          <div className={classes.step}>  
             <p>Knudstorp, an economics PhD, had previously worked as a consultant for McKinsley & Company. In order to return the company to a profitable state, he introduced three key initiatives: Stabilise the business by reducing overhead, go ‘back to the brick’ with their design philosophy, and move into previously untapped ‘blue ocean’ markets.</p>
+          </div>
+        </Step>
+        <Step data="pieces_per_year_discontinued">
+          <div className={classes.step}>
             <p>The first of Knudstorp’s initiatives was to reduce the amount the company was spending. LEGO resumed control of their manufacturing and distribution centres, of which 80% had been previously outsourced, and moved them to cheaper regions in places such as Central Europe and Mexico. They also significantly reduced staff, from 9,100 at the company’s peak in [year] to 4,200 in 2007.</p>
           </div>
         </Step>
@@ -222,133 +238,6 @@ const Main = (props) => {
       <p> Some sustainability, if we have time</p>
 
       <p>From its humble beginnings as wooden toys in a Danish workshop, to the creation of the little plastic brick, a close shave with bankruptcy, and now the biggest toy company in the world, LEGO has been on a wild ride. Throughout this journey, it has continued to grow, innovate, and persevere through all the challenges and failures it has faced. It has captured the hearts and minds of peoples across many generations and demographics, and seems set to do so for a long time to come.</p>
-{/*      <p>An introduction might be in order. From humble biggenings, to almost bankrupt, to the biggest toy company in the world...</p>
-      <section>
-        <h3 className={classes.subtitle}>In the beginning (Part 1), there was nothing. Wait that’s a few billion years too early... </h3>
-        <GraphicContainer onStepEnter={timelineEnter} onStepExit={timelineExit} onStepProgress={onStepProgress} graphicComponent={<Timeline/>}>
-          <Step data="d1920">
-            <div className={classes.step} id="s1920">
-              <p>LEGO was created by Ole Kirk Christiansen, in Billund, Denmark. Trained as a carpenter, he owned a small shop with a modest staff, working primarily building houses. However it was during the depression he began taking on smaller projects, such as ironing boards and step ladders. The small scale models for these projects were what inspired him to create a series of children’s toys.</p>
-            </div>
-          </Step>
-          <Step  data="d1930">
-            <div className={classes.step} id="s1930">
-              <p>Thus, in 1932, LEGO was founded. Named for the danish ‘leg godt or ‘play well’, the company manufactured a wide array of wooden toys including the now iconic duck, to yo-yos and pull trucks. The company enjoyed modest success, working to stay afloat during the great depression and WWII.</p>
-            </div>
-          </Step>
-          <Step  data="d1940">
-            <div className={classes.step} id="s1940">
-              <p>By the end of the war, traditional materials were scarce. However a new material had made its way to Denmark: Plastics. Towards the end of the 1940’s Christiansen had purchased a plastic injection moulding machine, and began to manufacture what they called “interlocking binding bricks”, modelled after a patent by Hilary Fisher Page. The idea was to have pieces that could fit together snugly, but also be able to be deconstructed.</p>
-            </div>
-          </Step>
-          <Step  data="d1950">
-            <div className={classes.step} id="s1950">
-              <p>Originally the LEGO bricks, or LEGO Mursten, were sold as an assorted collection of pieces, and received middling success. Two main problems arose: the bricks didn’t interlock well and once the initial novelty wore off, kids stopped engaging with them. While several iterations on the design helped alleviate the first issue, the second was solved with what would be called the ‘LEGO system’. The system involved packaging bricks as complete model sets, and unifying them under a single theme. The first theme, ‘town plan’, sold well, as children continued to play with the toy even after the model had been constructed.</p>
-            </div>
-          </Step>
-          <Step  data="d1960">
-            <div className={classes.step} id="s1960">
-              <p>Even with the success of the little plastic bricks, the company continued to manufacture a wide variety of toys. It wasn’t until 1960, when a fire consumed broke out in a warehouse and consumed the wooden stock, that the decision was made to focus solely on LEGO bricks. This allowed the company to focus on expansion both in terms of product and in geography. In the years that followed LEGO became a global brand, featuring not only the classic ‘system’ sets, but also Duplo for younger audiences, and Expert (later Technic) for more advanced ones.</p>
-            </div>
-          </Step>
-          <Step  data="d1970">
-            <div className={classes.step} id="s1970">
-              <p>One of the biggest success stories came from the introduction of the ‘Minifigure’ […] These figures allowed the company to further dive into various themes within the base product, including the well received Castle and Space themes.</p>
-            </div>
-          </Step>
-        </GraphicContainer>
-      </section>
-
-      <section>
-        <h3 className={classes.subtitle}>Shit hit’s the fan (Part 2)</h3>
-        <h4>Let's do a quick stocktake on what lego is doing (Theme's etc) and what they expanded into in the 90's</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<Gantt/>} alignment="bottom" orientation="vertical">
-          <Step data="testup">
-            <div className={classes.step}>
-              <p>So let’s check in. By 1992 LEGO is a household name, selling to a worldwide audience, with sets targeting a wide variety of interests across multiple demographics. How then, within the decade that follows, does the company nearly go bankrupt?</p>
-              <p>Robertson points to two key factors, one organic and one external. The first was that LEGO was at the end of it’s natural growth cycle. “There are only so many feet of toy space and so many toy stores around the world”. The second was the multimedia revolution that was already taking place with the rise of the home console and the internet.</p>
-              <p>In order to counteract these factors, LEGO spent a significant amount of resources focused on growth and innovation. Around 1995, the company ‘retired’ the majority of their senior design team, instead recruiting ‘innovators’ from European design schools. These innovators came with new design philosophies […].</p>
-              <p>Many themes were rebranded or retired entirely, being replaced by a slate of new products. It seems as though the company wasn't sure what would be successful, as so threw everything at the wall. Between 1992-2002, LEGO released [#] of themes, of which the majority were cancelled shortly thereafter. Even previously popular themes such as space found themselves on the chopping block.</p>
-              <p>Perhaps the most infamous themes released during this time was Galidor. Although the thing that made everyone hate it was more to do with the stinker of a TV show they released.</p>
-              <p>Lego also attempted to expand into the video game market, albeit with little success</p>
-              <p>One big success during this time of rapid fire innovation was the decision to lean more on story driven content. The first foray into this was by with a license with Star Wars that still exists today, accompanying the hotly anticipated trilogy of films. And it was a massive success! Unfortunately LEGO found themselves hampered by the fees involved, and also discovered that during years when the franchise wasn't releasing a new product, their own sales suffered.</p>
-              <p>This drove LEGO to create Bionicle, of which a great deal has been written about. In fact robertson described it as the only profitible product the company had at the time. [...]</p>
-            </div>
-          </Step>
-        </GraphicContainer>
-
-        <h4>So how was the product changing</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<Lines/>} alignment="bottom" orientation="vertical">
-          <Step data="/images/line_test_1.png">
-            <div className={classes.step}>
-              <p>Even with it's success, Bionicle exemplified the conceptual stuggle </p>
-              <p>There was also an obvious shift when it came to designing the set’s themselves. Build complexity seemed to dwindle, utilising a smaller number of highly specialised pieces. It seemed to be build for “people who didn’t really like LEGO”.</p>
-            </div>
-          </Step>
-          <Step data="/images/line_test_2.png">
-            <div className={classes.step}>
-              <p>This break neck innovation lead to the company releasing a greater number of sets than ever before, from 137 in 1992 to over 500 a decade later.</p>
-            </div>
-          </Step>
-          <Step data="/images/line_test_3.png" data-offset="1">
-            <div className={classes.step}>
-              <p>The record number of sets, combined with the use of highly specialised pieces, also saw a spike in the number of unique pieces LEGO was producing - tripling between 1992 and 1997. And as to be expected, having thrice the number of pieces results in thrice the cost. Combined with increased production cost from terrestrial labour, LEGO’s financials were looking in dire shape.</p>
-            </div>
-          </Step>
-        </GraphicContainer>
-
-        <h4>Let's talk about the money shall we...</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<Ebitda/>} alignment="bottom" orientation="vertical">
-        </GraphicContainer>
-
-
-      </section>
-
-      <section>
-        <h3 className={classes.subtitle}>Back and better than ever (Part 3)</h3>
-        <h4>Money is improving!</h4>
-        <GraphicContainer onStepEnter={onStepEnter} onStepExit={onStepExit} onStepProgress={onStepProgress} graphicComponent={<p>EBIBIBI Redux</p>} alignment="left">
-          <Step data="test1">
-            <div className={classes.step}>
-              <p>In 2004 Jørgen Vig Knudstorp was appointed CEO, the first time the company was helmed by someone outside of the family. He introduced three key initiatives to help revitalise the company: Reduction and relocation of the workforce, going ‘back to the brick’, and moving into more ‘blue ocean’ markets.</p>
-            </div>
-          </Step>
-          <Step data="test2">
-            <div className={classes.step}>
-              <p>[I wonder if we have any staffing data…] Between 1998 and 2007, LEGO reduced worldwide staff by over a half, from 9100 to 4200. Large parts of which came from outsourcing. For example the LEGOLAND parks were sold off to Merlin entertainment, and manufacturing and distribution centres were moved to Mexico and the Czech Republic respectively.</p>
-            </div>
-          </Step>
-          <Step data="test3">
-            <div className={classes.step}>
-              <p>LEGO also sought to refocus the product lines they were creating. [We need to do more work on the complexity data].</p>
-            </div>
-          </Step>
-          <Step data="test4">
-            <div className={classes.step}>
-              <p>The company also moved to unify and simplify the number of themes it was creating. Many of the more elaborate themes were discontinued, and there was a return to classic themes such as ‘City’ and ‘Creator’. ‘Ninjago’ also debuted as the premier ‘boys toys’ line.</p>
-            </div>
-          </Step>
-          <Step data="test5">
-            <div className={classes.step}>
-              <p>They also solved alleviated the issue with the tie-in sets by creating their own titles in the off cycle. The ‘LEGO Star Wars’ games, for instance, are popular. (How popular?). It has proved so successful that an estimated 60% of all American sales come from tie-in products. This has incentivised LEGO to create a host of tie-in products, from current hot topics such as avatar and Batman, to nostalgic media targeting a more adult audience, such as friends and golden girls.</p>
-            </div>
-          </Step>
-        </GraphicContainer>
-      </section>
-
-      <section>
-        <h3 className={classes.subtitle}>Epilogue: To infinity and bey... shit wrong toy!</h3>
-
-        <p>Speaking of adults, an effort has been made to engage more with the AFOL, or Adult Fans of Lego, community. These are adults who want to engage with the brand not simply as a nostalgic group, but also to interact with products in a more mature way. This involves smaller, more intricate sets such as the Architecture series, through to some of the largest sets LEGO has created such as the Eiffel Tower, coming in at over 10,000 pieces!</p>
-
-        <p>All of this seems to be working. Look, more ALI BABA! In fact in [year] LEGO became the largest toy company in the world.</p>
-
-        <p>The question then becomes, where to next? LEGO has continues to innovate on its existing themes, such as a revitalisation of the Friends theme to include a more diverse range of characters, and has launched the Monkey Kid and Chinese New Year themes to tap into more of the Chinese market. And of course, there will always be new and exciting franchises for the company to team up with.</p>
-
-        <p>One big hurdle the company is working on is materials. LEGO has used ABS plastic since 1964, but research indicates that both macro and micro plastics and damaging to both the planet and to human health. While efforts are being made around the entire supply chain, such as reducing plastic packaging, the largest innovation is the investment in plant based, decomposable plastics.</p>
-
-        <p>But whatever the future holds, it seems LEGO is here to stay this time…</p>
-      </section>*/}
     </main>
   );
 }
