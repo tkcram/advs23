@@ -1,4 +1,6 @@
 import injectSheet from 'react-jss';
+import { useState } from 'react'
+import About from './About'
 
 const styles = {
   header: {
@@ -25,11 +27,19 @@ const styles = {
 
 const Header = (props) => {
 	const { classes } = props;
+	const [showModal, setShowModal] = useState(false)
+	
+	const toggleModal = () => {
+		setShowModal(!showModal);
+	}
 
 	return(
-		<header className={classes.header}>
-			<div className={classes.title}>INFO 696</div>
-			<button className={classes.about}>About</button>
+		<header>
+			<div className={classes.header}>
+				<h1 className={classes.title}>Brick x Brick</h1>
+				<button className={classes.about} onClick={toggleModal}>About</button>
+			</div>
+			{showModal && <About onClose={toggleModal}/>}
 		</header>
 	)
 };

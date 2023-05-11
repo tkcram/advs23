@@ -18,7 +18,7 @@ const styles = {
   },
   graphic: {
     position: 'sticky',
-    backgroundColor: '#aaa',
+    // backgroundColor: '#aaa',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -41,8 +41,9 @@ const styles = {
   },
   vgraphic: {
     width: '100%',
-    height: '35vh',
+    height: '30vh',
     top: '75px',
+    backgroundColor: "#f9f9f9"
   },
   hscroller: {
     flexBasis: '50%',
@@ -68,7 +69,7 @@ const GraphicContainer = ({onStepEnter, onStepExit, onStepProgress, graphicCompo
             onStepExit={onStepExit}
             progress
             onStepProgress={onStepProgress}
-            offset={0.6}
+            offset={0.4}
             // debug
             >
             {children}

@@ -1,9 +1,134 @@
-﻿group,start,originalrun,hiatus,end
-classic,1966,33,15,9
-town,1978,45,0,0
-space,1978,23,6,6
-castle,1978,22,2,16
-starwars,1999,24,0,0
-bionicle,2001,9,0,0
-technic,1974,49,0,0
-duplo,1969,54,0,0
+﻿group,start,length,end,name
+Castle,1984,10,1993,Black Falcons
+Castle,1987,4,1990,Forestmen
+Castle,1987,7,1993,Crusaders
+Castle,1987,8,1994,Black Knights
+Castle,1992,2,1993,Wolfpack
+Castle,1993,3,1995,Dragon Masters
+Castle,1995,4,1998,Royal Knights
+Castle,1996,1,1996,Dark Forest
+Castle,1997,2,1998,Fright Knights
+Castle,1998,1,1998,Crusaders
+Castle,1998,1,1998,Black Knights
+Castle,1998,1,1998,Dragon Masters
+Castle,1998,3,2000,Ninja
+Castle,2000,1,2000,Knight's Kingdom
+Castle,2002,2,2003,Knight's Kingdom
+Castle,2004,3,2006,Knight's Kingdom
+Castle,2006,1,2006,Knight's Kingdom
+Castle,2007,1,2007,Castle
+Castle,2010,3,2012,Kingdoms
+Castle,2013,1,2013,Castle
+Classic,1966,34,1999,Classic
+Classic,2014,9,2022,Classic
+Duplo,1979,23,2001,Play House
+Duplo,1983,40,2022,Trains
+Duplo,1985,1,1985,Mosaic
+Duplo,1992,9,2000,Toolo
+Duplo,1997,3,1999,Dino
+Duplo,1998,1,1998,Western
+Duplo,1998,3,2000,Little Forest Friends
+Duplo,1999,1,1999,Construction
+Duplo,1999,3,2001,Winnie the Pooh
+Duplo,2000,2,2001,Action Wheelers
+Duplo,2001,1,2001,Dolls
+Duplo,2001,3,2003,Bob the Builder
+Duplo,2003,1,2003,Playpoint
+Duplo,2004,1,2004,Ferrari
+Duplo,2004,19,2022,Castle
+Duplo,2004,19,2022,LEGO Ville
+Duplo,2005,2,2006,Airport
+Duplo,2005,3,2007,Bob the Builder
+Duplo,2005,6,2010,Thomas & Friends
+Duplo,2006,1,2006,Pirates
+Duplo,2008,1,2008,Dino
+Duplo,2009,1,2009,Bob the Builder
+Duplo,2010,1,2010,Toy Story
+Duplo,2010,3,2012,Cars
+Duplo,2011,1,2011,Winnie the Pooh
+Duplo,2012,11,2022,Disney Princess
+Duplo,2013,2,2014,Jake and the Never Land Pirates
+Duplo,2013,2,2014,Mickey Mouse & Friends
+Duplo,2013,2,2014,Planes
+Duplo,2014,1,2014,DC Universe Super Heroes
+Duplo,2015,1,2015,Sofia the First
+Duplo,2015,1,2015,Cars
+Space,1978,11,1988,Classic Space
+Space,1987,4,1990,Blacktron I
+Space,1987,4,1990,Futuron
+Space,1989,2,1990,Space Police I
+Space,1990,4,1993,M-Tron
+Space,1991,3,1993,Blacktron Future Generation
+Space,1992,2,1993,Space Police
+Space,1993,1,1993,Space Police
+Space,1993,2,1994,Ice Planet 2002
+Space,1994,2,1995,Unitron
+Space,1994,4,1997,Spyrius
+Space,1996,2,1997,Exploriens
+Space,1997,1,1997,Roboforce
+Space,1997,3,1999,UFO
+Space,1998,2,1999,Insectoids
+Space,1999,1,1999,Space Police II
+Space,1999,1,1999,Ice Planet 2002
+Space,1999,1,1999,Spyrius
+Space,2000,2,2001,Life on Mars
+Space,2007,3,2009,Mars Mission
+Space,2009,2,2010,Space Police
+Space,2011,1,2011,Alien Conquest
+Space,2013,1,2013,Galaxy Squad
+Technic,1982,13,1994,Universal
+Technic,1986,1,1986,Arctic Action
+Technic,1995,5,1999,TechPlay
+Technic,1995,9,2003,TechBuild
+Technic,1998,1,1998,CyberMaster
+Technic,1998,2,1999,CyberSlam
+Technic,1998,2,1999,eLab
+Technic,1998,5,2002,Mindstorms
+Technic,1999,2,2000,Throwbots / Slizers
+Technic,2000,1,2000,Competition
+Technic,2000,1,2000,RoboRiders
+Technic,2000,2,2001,Speed Slammers
+Technic,2000,4,2003,Star Wars
+Technic,2001,10,2010,BIONICLE
+Technic,2002,1,2002,Spybotics
+Technic,2003,1,2003,eLab
+Technic,2004,1,2004,Mindstorms
+Technic,2006,17,2022,Mindstorms
+Technic,2010,5,2014,Hero Factory
+Technic,2015,1,2015,BIONICLE
+Town,1958,9,1966,Town Plan
+Town,1978,12,1989,Classic Town
+Town,1985,14,1998,Race
+Town,1985,20,2004,Town Airport
+Town,1987,1,1987,Flight
+Town,1987,2,1988,Emergency
+Town,1987,2,1988,High Speed Adventure
+Town,1987,3,1989,Service and Repair
+Town,1991,1,1991,Houses
+Town,1991,1,1991,Vehicles
+Town,1991,2,1992,RSQ911
+Town,1991,3,1993,Fire
+Town,1991,3,1993,Police
+Town,1991,6,1996,Rescue
+Town,1991,6,1996,Flight
+Town,1992,2,1993,Nautica
+Town,1992,6,1997,Paradisa
+Town,1993,1,1993,Leisure
+Town,1993,1,1993,Octan
+Town,1993,1,1993,Vehicles
+Town,1995,1,1995,Launch Command
+Town,1996,1,1996,Fire
+Town,1996,1,1996,Police
+Town,1997,1,1997,Outback
+Town,1997,2,1998,Divers
+Town,1997,2,1998,Town Jr.
+Town,1998,2,1999,Res-Q
+Town,1998,3,2000,Extreme Team
+Town,1998,4,2001,City Center
+Town,1999,2,2000,Space Port
+Town,2000,1,2000,Arctic
+Town,2000,1,2000,Race
+Town,2001,2,2002,Town Jr.
+Town,2003,2,2004,World City
+Town,2005,18,2022,City
+Town,2006,1,2006,Flight
