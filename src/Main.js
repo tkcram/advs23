@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import injectSheet from 'react-jss';
 import { Step } from 'react-scrollama';
-import * as d3 from 'd3'
 import GraphicContainer from './GraphicContainer'
 import Timeline from './Timeline'
 import Lines from './Lines'
@@ -39,7 +38,7 @@ const styles = {
 const Main = (props) => {
   const [data, setData] = useState(0);
   // const [steps, setSteps] = useState([10, 20, 30]);
-  const [progress, setProgress] = useState(0);
+  // const [progress, setProgress] = useState(0);
   // const [dataset, setDataset] = useState(null);
   const { classes } = props;
 
@@ -77,7 +76,7 @@ const Main = (props) => {
   };
 
   const onStepProgress = ({ progress }) => {
-    setProgress(progress);
+    // setProgress(progress);
   };
 
   return (

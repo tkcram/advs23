@@ -13,7 +13,6 @@ const styles = {
   modal: {
     background: 'white',
     padding: '20px',
-    zIndex: 5,
     position: 'fixed',
     left: 'calc(25vw - 60px)',
     top: 'calc(25vh - 40px)',
